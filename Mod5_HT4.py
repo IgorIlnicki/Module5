@@ -1,4 +1,4 @@
-def input_error(func):
+def input_error(func):   # декоратор
     def inner(*args, **kwargs):
         try:
             return func(*args, **kwargs)
