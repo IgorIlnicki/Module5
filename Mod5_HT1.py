@@ -6,7 +6,7 @@ def caching_fibonacci():
         if n == 1: return 1
         if n in cache: return cache[n]
         cache[n] = fibonacci(n - 1) + fibonacci(n - 2)
-        print(" 1 cache = ", cache)
+        # print(" 1 cache = ", cache)
         return cache[n]
         
     return fibonacci(n)

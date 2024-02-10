@@ -14,7 +14,6 @@ def generator_numbers(text: str):
         yield dig
 
 def sum_profit(text: str, func: Callable):
-    generator_numbers(text)
     return reduce(lambda x,y:x+y ,func(text))
 
 # generator_numbers(text)
